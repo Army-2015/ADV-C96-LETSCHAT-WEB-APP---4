@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="kwitter_room.css" >
+        <script src="kwitter_room.js"></script>
+    </head>
+    <body style="background-color: bisque;">
+        <button id="btn-logout"
+                    onclick="logout();"
+                    class="glyphicon glyphicon-log-out btn btn-danger">
+                    Logout
+        </button>
+        <br>
+        <h1 class="header" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;">Kwitter
+                <sup>
+                <img id="logo" src="mail.jpg" width="55" height="50"></sup>
+            </h1>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11">
+               <h3 id="msg_firebase"></h3>
+            <hr>
+        </div>
+        <label>Send:</label>
+        <input id="msg_input" 
+                   type="text" 
+                   class="form-control"
+                   placeholder="Enter your message">
+        <button onclick="add_msg()" id="btn_send" class="btn btn-danger">Send
+        </button>
+        
+    </body>
